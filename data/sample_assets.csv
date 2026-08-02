@@ -1,0 +1,9 @@
+asset_id,asset_name,asset_type,asset_owner,department,data_classification,business_criticality,location,description
+AST-001,Customer Records Database,Database,Director of Information Technology,Information Technology,Restricted,Critical,AWS us-east-2,"Stores fictional customer identity, profile, and account information."
+AST-002,Online Banking Portal,Cloud Application,Digital Banking Manager,Digital Banking,Restricted,Critical,AWS us-east-2,"Provides fictional customers with online and mobile banking access."
+AST-003,Microsoft 365,Software as a Service,Collaboration Services Administrator,Information Technology,Confidential,High,Microsoft 365 cloud,"Provides fictional bank email, collaboration, and office productivity services."
+AST-004,Employee Laptop Fleet,Endpoint Devices,Endpoint Services Manager,Information Technology,Confidential,High,EagleShield offices and approved remote locations,"Includes bank-managed laptops used by the fictional workforce."
+AST-005,Payment Processor Service,Third-Party Service,Payments Operations Manager,Operations,Restricted,Critical,Third-party hosted service,"Processes fictional card and electronic payment transactions under contract."
+AST-006,Branch Network Infrastructure,Network Equipment,Network Services Manager,Information Technology,Internal,Critical,Fictional main office and two branch offices,"Includes fictional firewalls, routers, switches, and wireless equipment."
+AST-007,Enterprise Backup System,Backup and Recovery System,Infrastructure Services Manager,Information Technology,Restricted,Critical,Fictional primary site and isolated cloud vault,"Protects recoverable copies of fictional systems and business data."
+AST-008,Identity and Access Management System,Identity Service,Identity and Access Manager,Information Security,Restricted,Critical,Fictional hybrid identity environment,"Manages fictional workforce identities, authentication, and access assignments."
