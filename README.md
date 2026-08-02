@@ -1,6 +1,6 @@
 # CyberRisk360
 
-CyberRisk360 is a beginner-friendly cybersecurity Governance, Risk, and Compliance (GRC) project. Its purpose is to provide a simple, approachable way to learn how organizations identify risks, document controls, monitor compliance, and communicate their cybersecurity posture.
+CyberRisk360 is a cybersecurity Governance, Risk, and Compliance (GRC) project. Its purpose is to provide a simple, approachable way to learn how organizations identify risks, document controls, monitor compliance, and communicate their cybersecurity posture.
 
 ## Planned features
 
