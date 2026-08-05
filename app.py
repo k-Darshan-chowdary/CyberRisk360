@@ -13,6 +13,7 @@ from ui.evidence_page import render_evidence_page
 from ui.remediation_page import render_remediation_page
 from ui.reports_page import render_reports_page
 from ui.risk_page import render_risk_page
+from ui.system_status_page import render_system_status_page
 
 
 st.set_page_config(
@@ -30,6 +31,7 @@ PAGES = {
     "Control Evidence": render_evidence_page,
     "Remediation Actions": render_remediation_page,
     "Reports & Exports": render_reports_page,
+    "System Status": lambda _data: render_system_status_page(),
     "About the Project": render_about_page,
 }
 
@@ -44,7 +46,7 @@ def main() -> None:
     st.sidebar.caption("EagleShield Community Bank")
     selected_page = st.sidebar.radio("Navigation", list(PAGES), key="main_navigation")
     st.sidebar.divider()
-    st.sidebar.caption("Read-only portfolio interface · Phase 7")
+    st.sidebar.caption("Read-only portfolio interface · Phase 8")
 
     try:
         project_data = load_all_project_data()
@@ -65,7 +67,7 @@ def main() -> None:
     except Exception as error:  # Streamlit must show a friendly failure for unexpected issues.
         st.error("CyberRisk360 could not load the requested page. Please try again.")
         with st.expander("Developer details"):
-            st.exception(error)
+            st.caption(f"Unexpected error type: {type(error).__name__}")
 
 
 if __name__ == "__main__":
