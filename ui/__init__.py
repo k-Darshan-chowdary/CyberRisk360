@@ -1,1 +1,1 @@
-"""Read-only Streamlit interface, including Phase 7 reports and exports."""
+"""Read-only Streamlit interface, including Phase 8 system readiness."""
