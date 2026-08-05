@@ -11,6 +11,7 @@ from ui.dashboard import render_dashboard
 from ui.data_loader import load_all_project_data
 from ui.evidence_page import render_evidence_page
 from ui.remediation_page import render_remediation_page
+from ui.reports_page import render_reports_page
 from ui.risk_page import render_risk_page
 
 
@@ -28,6 +29,7 @@ PAGES = {
     "Security Controls": render_control_page,
     "Control Evidence": render_evidence_page,
     "Remediation Actions": render_remediation_page,
+    "Reports & Exports": render_reports_page,
     "About the Project": render_about_page,
 }
 
@@ -42,7 +44,7 @@ def main() -> None:
     st.sidebar.caption("EagleShield Community Bank")
     selected_page = st.sidebar.radio("Navigation", list(PAGES), key="main_navigation")
     st.sidebar.divider()
-    st.sidebar.caption("Read-only portfolio interface · Phase 6")
+    st.sidebar.caption("Read-only portfolio interface · Phase 7")
 
     try:
         project_data = load_all_project_data()
