@@ -33,6 +33,9 @@ def render_about_page(data: dict[str, list[dict[str, Any]]]) -> None:
         "- **Control register:** maps safeguards to assets and risks.\n"
         "- **Evidence register:** tracks proof of control operation and expiration.\n"
         "- **Remediation register:** tracks corrective actions, ownership, and due dates.\n"
+        "- **Reporting engine:** creates executive summaries, coverage measures, and priority insights.\n"
+        "- **Export manager:** generates Markdown, CSV, and ZIP reports entirely in memory.\n"
+        "- **Reports & Exports page:** previews management reporting and provides downloads.\n"
         "- **Streamlit UI:** provides read-only navigation, metrics, charts, filters, and details."
     )
 
@@ -45,8 +48,9 @@ def render_about_page(data: dict[str, list[dict[str, Any]]]) -> None:
 
     st.subheader("Completed Phases")
     st.write(
-        "Phases 0 through 6 cover project foundation, risk scoring, the risk register, asset and "
-        "control relationships, evidence, remediation, and this read-only Streamlit interface."
+        "Phases 0 through 7 cover project foundation, risk scoring, the risk register, asset and "
+        "control relationships, evidence, remediation, the read-only Streamlit interface, and "
+        "management reporting with downloadable Markdown, CSV, and ZIP formats."
     )
 
     st.subheader("Project Architecture")
@@ -75,7 +79,8 @@ def render_about_page(data: dict[str, list[dict[str, Any]]]) -> None:
 
     st.subheader("Current Limitations")
     st.write(
-        "Phase 6 is intentionally read-only. It does not include add, edit, or delete forms; "
+        "Phase 7 is intentionally read-only. PDF reporting remains a future feature after Phase 8. "
+        "The project does not include add, edit, or delete forms; "
         "authentication; database storage; file uploads; email alerts; or production deployment. "
         "CSV storage and the fixed demonstration date are appropriate for a portfolio exercise, "
         "but not for a production banking system."
