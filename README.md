@@ -5,6 +5,7 @@
 [![CI](https://github.com/k-Darshan-chowdary/CyberRisk360/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/k-Darshan-chowdary/CyberRisk360/actions/workflows/ci.yml)
 ![Python 3.13](https://img.shields.io/badge/python-3.13-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/interface-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 CyberRisk360 is a cybersecurity governance, risk, and compliance (GRC) reference application built with Python and Streamlit. It connects five validated registers in a read-only interface so you can explore risk exposure, review control coverage, identify evidence and remediation priorities, and download management reports.
 
@@ -136,4 +137,6 @@ Earlier phase documents, including the [Phase 1 scope](docs/project_scope.md), r
 
 ## License
 
-A project license has not yet been selected. Public visibility alone does not grant general permission to reuse or redistribute the code. License selection is an open item for public launch; no open-source license badge is claimed here.
+CyberRisk360 is available under the [MIT License](LICENSE). You may use, copy,
+modify, and distribute the software subject to the license terms. The software is
+provided without warranty.

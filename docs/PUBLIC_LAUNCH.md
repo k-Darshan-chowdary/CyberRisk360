@@ -32,8 +32,8 @@ Do not use a guessed Streamlit URL or a badge that implies an unavailable demo.
 
 ## Before a public announcement
 
-- [ ] Select and commit a license. Add the matching README license link and badge
-  only once the license is present; do not claim open-source licensing beforehand.
+- [x] Select and commit a license. CyberRisk360 uses the [MIT License](../LICENSE),
+  linked from the README with a matching badge.
 - [ ] Merge the reviewed launch documentation and contributor files with passing CI.
 - [ ] Check the About description and topics against the current capabilities.
 - [ ] Run all [quality gates](../CONTRIBUTING.md#validate-a-change) from a clean
