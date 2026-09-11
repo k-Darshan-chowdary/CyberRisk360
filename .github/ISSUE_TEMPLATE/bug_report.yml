@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a reproducible problem with setup, data, the interface, or exports.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use fictional data only. For suspected vulnerabilities, follow [SECURITY.md](https://github.com/k-Darshan-chowdary/CyberRisk360/blob/main/SECURITY.md) instead of posting details here.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What went wrong?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the commands or page, filters, and actions needed to reproduce the issue.
+      placeholder: |
+        1. Start from this commit or branch...
+        2. Run this command or open this page...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the commit or branch, operating system, Python version, and browser if relevant. Note whether dependencies were installed from requirements.txt.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or check results
+      description: Optional. Include relevant error output or quality-gate results. Remove secrets, personal information, and real organization data before submitting.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked existing issues for the same problem.
+          required: true
+        - label: This report contains only fictional or non-sensitive information and does not disclose a suspected vulnerability.
+          required: true

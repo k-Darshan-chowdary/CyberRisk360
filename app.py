@@ -46,7 +46,7 @@ def main() -> None:
     st.sidebar.caption("EagleShield Community Bank")
     selected_page = st.sidebar.radio("Navigation", list(PAGES), key="main_navigation")
     st.sidebar.divider()
-    st.sidebar.caption("Read-only portfolio interface · Phase 8")
+    st.sidebar.caption("Read-only GRC demo · Synthetic data")
 
     try:
         project_data = load_all_project_data()

@@ -279,7 +279,7 @@ Coverage measures relationship presence, not control adequacy or compliance.
 
 ## 11. Scope and Data Notice
 
-All CyberRisk360 data is fictional and created for education and portfolio demonstration. This report is educational and is not an actual assessment of a bank, security posture, regulatory compliance, or operational readiness. Results use the fixed reporting reference date shown above and reflect only the supplied in-memory registers.
+All CyberRisk360 data is fictional and created for GRC workflow demonstration. This report is not an actual assessment of a bank, security posture, regulatory compliance, or operational readiness. Results use the fixed reporting reference date shown above and reflect only the supplied in-memory registers.
 """
 
 
