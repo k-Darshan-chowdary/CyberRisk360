@@ -6,9 +6,9 @@ CyberRisk360 is a GRC reference application using a fictional organization and s
 
 ## Reporting a vulnerability
 
-Open the repository's [Security tab](https://github.com/k-Darshan-chowdary/CyberRisk360/security) and use **Report a vulnerability** if GitHub private vulnerability reporting is enabled. Include the affected commit, impact, and minimal reproduction using synthetic data only.
+Open the repository's [Security tab](https://github.com/k-Darshan-chowdary/CyberRisk360/security) and use **Report a vulnerability**. Include the affected commit, impact, and minimal reproduction using synthetic data only.
 
-If that option is unavailable, request a private reporting channel from the repository owner. A public issue requesting contact must contain no vulnerability details, exploit steps, credentials, or sensitive data. Do not send a detailed report until a private channel is available. Private reporting availability must be verified before public launch.
+If that option is unavailable, request a private reporting channel from the repository owner. A public issue requesting contact must contain no vulnerability details, exploit steps, credentials, or sensitive data. Do not send a detailed report until a private channel is available.
 
 ## Security measures
 
