@@ -1,8 +1,12 @@
 # CyberRisk360 Phase 1 Project Scope
 
+> Historical scope: this document records the Phase 1 foundation. Dashboards, reporting,
+> evidence, and remediation have since been implemented. See the [current README](../README.md)
+> for present capabilities and limitations.
+
 ## Purpose
 
-CyberRisk360 is a beginner-friendly cybersecurity governance, risk, and compliance (GRC) portfolio project. Its purpose is to demonstrate how an organization can document important technology assets, identify cybersecurity risks, score those risks consistently, and communicate risk information to people with different responsibilities.
+CyberRisk360 is a cybersecurity governance, risk, and compliance (GRC) reference application. Its purpose is to demonstrate how an organization can document important technology assets, identify cybersecurity risks, score those risks consistently, and communicate risk information to people with different responsibilities.
 
 ## Fictional organization
 

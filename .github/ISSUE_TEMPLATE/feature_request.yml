@@ -1,0 +1,41 @@
+name: Feature or documentation request
+description: Propose an improvement to a GRC workflow, usability, or documentation.
+title: "[Request]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the [roadmap](https://github.com/k-Darshan-chowdary/CyberRisk360/blob/main/docs/ROADMAP.md) and existing issues first. Use fictional examples. For suspected vulnerabilities, follow [SECURITY.md](https://github.com/k-Darshan-chowdary/CyberRisk360/blob/main/SECURITY.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Who would benefit, and what are they trying to do? Describe the limitation in the current workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the behavior or documentation you would like, with a fictional example if useful.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How would we know it works?
+      description: Suggest an observable result, example output, or validation step.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and scope
+      description: Optional. Describe workarounds or alternatives, and any changes this would need to data, scoring, exports, dependencies, or the read-only interface.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked existing issues and the roadmap for related work.
+          required: true
+        - label: This request contains only fictional or non-sensitive information.
+          required: true

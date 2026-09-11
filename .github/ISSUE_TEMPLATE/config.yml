@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security policy
+    url: https://github.com/k-Darshan-chowdary/CyberRisk360/blob/main/SECURITY.md
+    about: Read the policy before reporting a suspected vulnerability. Do not disclose details in a public issue.

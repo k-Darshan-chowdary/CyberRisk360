@@ -174,4 +174,4 @@ def render_reports_page(project_data: dict[str, list[dict[str, Any]]]) -> None:
             label, payload, filename, mime, key = args
             container.download_button(label, payload, file_name=filename, mime=mime,
                                       key=key, width="stretch")
-    st.info("PDF generation will be added after Phase 8. All reports use fictional educational data.")
+    st.info("Available export formats: Markdown, CSV, and ZIP. All reports use synthetic demonstration data.")

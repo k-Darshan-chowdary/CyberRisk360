@@ -2,9 +2,13 @@
 
 ## Scope and supported version
 
-CyberRisk360 is an educational portfolio application for a fictional organization. Only the current `main` branch is supported. All included data is fictional; the repository must never contain banking, customer, employee, personal, credential, or secret data.
+CyberRisk360 is a GRC reference application using a fictional organization and synthetic records. Security fixes target the current `main` branch; older snapshots have no separate maintenance commitment. The repository must never contain real banking, customer, employee, personal, credential, or secret data.
 
-Report a suspected security issue privately to the repository owner through GitHub. Do not publish vulnerability details before the owner has reviewed them. Do not include real sensitive information in a report.
+## Reporting a vulnerability
+
+Open the repository's [Security tab](https://github.com/k-Darshan-chowdary/CyberRisk360/security) and use **Report a vulnerability** if GitHub private vulnerability reporting is enabled. Include the affected commit, impact, and minimal reproduction using synthetic data only.
+
+If that option is unavailable, request a private reporting channel from the repository owner. A public issue requesting contact must contain no vulnerability details, exploit steps, credentials, or sensitive data. Do not send a detailed report until a private channel is available. Private reporting availability must be verified before public launch.
 
 ## Security measures
 
