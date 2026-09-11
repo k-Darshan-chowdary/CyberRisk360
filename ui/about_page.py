@@ -94,6 +94,6 @@ def render_about_page(data: dict[str, list[dict[str, Any]]]) -> None:
         "system, production database, audit-log storage, encryption-at-rest implementation, "
         "penetration test, or formal compliance certification. It uses no real banking data, and "
         "public deployment is not performed automatically. CSV storage and the fixed demonstration "
-        "date of 2026-08-05 support reproducible demonstrations. Evidence attachments are not "
+        "date of 2026-08-05 supports reproducible demonstrations. Evidence attachments are not "
         "stored or collected, and the application is not suitable for a production banking system."
     )
