@@ -56,6 +56,11 @@ the backend modules rather than duplicating it in the UI. Add or update tests
 when behavior changes; documentation-only edits usually need a link and content
 review instead.
 
+For a first contribution, see the concrete [starter tasks](docs/SHOWCASE.md#help-someone-make-their-first-contribution).
+The Risk Register also includes an isolated what-if calculator. Hypothetical
+inputs must never overwrite the bundled registers or management reports; the
+visitor-journey tests check this boundary and the guided navigation flow.
+
 ## Data and methodology changes
 
 Use only fictional records in code, screenshots, reports, tests, and issue

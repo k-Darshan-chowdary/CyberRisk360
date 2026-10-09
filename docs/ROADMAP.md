@@ -15,6 +15,8 @@ EagleShield Community Bank:
 - Inherent and residual risk scoring using the documented likelihood, impact,
   and estimated control-effectiveness model.
 - Nine Streamlit pages with summaries, filters, relationship views, and charts.
+- Guided risk exploration with asset, control, evidence, and remediation context;
+  shareable recorded-risk URLs and an isolated what-if scoring calculator.
 - CSV register downloads, an executive Markdown report, and a ZIP report package.
 - Sample-data integrity verification, project-health checks, automated tests,
   and GitHub Actions quality gates.

@@ -6,6 +6,28 @@ You can [read an actual generated executive report](examples/executive-report.md
 
 ## Five-minute tour
 
+### Fast path: explore on one page
+
+On the Executive Dashboard, choose **Explore the phishing scenario**. In Risk
+Register, **Explore a risk** opens `RSK-001` with its affected asset, directly
+mapped controls, evidence, and remediation. Actions linked through a mapped
+control are explicitly labeled; they can concern a different risk.
+
+Under **What if the assumptions change?**, set effectiveness to **0%**. The
+scenario residual score becomes **16.00 (High)**, compared with the recorded
+**6.40 (Low)**. Set it to **100%** to see **0.00 (Low)** in this simplified model,
+then choose **Reset scenario**. This calculator changes no records or reports;
+an assumed 100% effectiveness is a mathematical endpoint, not a security claim.
+
+Copy the browser URL to share the recorded risk selection, for example
+`http://localhost:8501/?page=risks&risk=RSK-001` locally. Recipients need access to
+the same running app; a localhost link only works on the machine running it.
+Hypothetical inputs and search filters are not encoded in the link. Unknown
+page or risk values fall back to the dashboard or the first available risk.
+Choose **Continue to executive reports** to finish the tour.
+
+### Detailed path: inspect each register
+
 Keep filters at **All** unless specified below. Use **Reset Filters** on a page if earlier searches hide a record. Relationships are shown in tables; use Navigation to open the next register.
 
 1. **Start with the risk.** Open **Risk Register** and enter `RSK-001` in **Search risks**. “Employee phishing compromise” affects `AST-003`. Likelihood 4 × impact 4 gives an inherent score of **16 (High)**. The recorded risk-level control-effectiveness estimate of 60% gives a residual score of **6.40 (Low)**. Its treatment is Mitigate and status is In Progress.

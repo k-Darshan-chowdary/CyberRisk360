@@ -9,7 +9,11 @@
 
 CyberRisk360 is a cybersecurity governance, risk, and compliance (GRC) reference application built with Python and Streamlit. It connects five validated registers in a read-only interface so you can explore risk exposure, review control coverage, identify evidence and remediation priorities, and download management reports.
 
+Built by [Darshan Konjeti](https://github.com/k-Darshan-chowdary) to demonstrate the full workflow from a technical risk assessment to an executive decision. For GRC learners, security practitioners exploring a reference implementation, and reviewers evaluating the project's engineering, the included scenario makes each relationship inspectable.
+
 [Quick start](#quick-start) · [Demo walkthrough](docs/DEMO.md) · [Methodology](docs/risk_methodology.md) · [Contributing](CONTRIBUTING.md) · [Roadmap](docs/ROADMAP.md)
+
+**Have 60 seconds?** [Read the generated executive report](docs/examples/executive-report.md), then [see how the project works](docs/SHOWCASE.md). No installation is needed for either. To try the app, use the quick start below and choose **Explore the phishing scenario** on the dashboard.
 
 The included scenario follows **EagleShield Community Bank**, an entirely fictional organization. All records are synthetic. The application is intended for local evaluation, demonstrations, and development with sample data.
 
@@ -23,6 +27,8 @@ The included scenario follows **EagleShield Community Bank**, an entirely fictio
 | --- | --- |
 | Asset inventory | Explore assets, owners, criticality, and linked risks and controls. |
 | Risk assessment | Review calculated inherent and residual risk, compare rating bands, and filter the risk register. |
+| Risk exploration | Follow a risk to its asset, directly mapped controls, supporting evidence, and related remediation on one page. Copy its URL to share that recorded assessment. |
+| What-if analysis | Change likelihood, impact, and estimated effectiveness in an isolated calculator; compare hypothetical scores without changing registers or reports. |
 | Control mapping | Review safeguards mapped to assets and risks, with NIST CSF function labels. |
 | Evidence tracking | Inspect evidence metadata, storage references, review status, and expiration dates. |
 | Remediation | Review ownership, priority, completion, and due dates for actions linked to risks or controls. |
@@ -30,6 +36,15 @@ The included scenario follows **EagleShield Community Bank**, an entirely fictio
 | Project health | Check sample-data integrity, relationships, exports, configuration, and dependency pins. |
 
 The sample contains **8 assets, 10 risks, 12 controls, 12 evidence records, and 10 remediation actions**. Nine pages cover the Executive Dashboard, Risk Register, Asset Inventory, Security Controls, Control Evidence, Remediation Actions, Reports & Exports, System Status, and About the Project.
+
+<details>
+<summary>See the risk explorer and what-if calculator</summary>
+
+![Risk explorer comparing the recorded phishing risk with hypothetical likelihood, impact, and control-effectiveness inputs](screenshots/risk-explorer.png)
+
+*Running local app with synthetic data. Hypothetical inputs do not change registers or reports.*
+
+</details>
 
 ## Quick start
 
@@ -57,6 +72,8 @@ python3.13 -m venv .venv
 ```
 
 Open the local URL printed by Streamlit, normally `http://localhost:8501`. Start with the **Executive Dashboard**, follow a risk through its related records, then open **Reports & Exports** to download the results. See the [demo walkthrough](docs/DEMO.md) for a guided tour.
+
+For a direct example after starting the app, open `http://localhost:8501/?page=risks&risk=RSK-001`. With the phishing scenario selected, set **Scenario control effectiveness (%)** to 0: residual risk rises from **6.40 (Low)** to **16.00 (High)**. Choose **Reset scenario** to return to the recorded assumptions. These hypothetical changes are never saved or included in reports.
 
 You can also [read an example executive report](docs/examples/executive-report.md) generated from the included data without installing the application.
 
@@ -130,8 +147,11 @@ Read the [security policy](SECURITY.md) before reporting a vulnerability and the
 | [Contributing](CONTRIBUTING.md) | Setup, contribution scope, and validation |
 | [Roadmap](docs/ROADMAP.md) | Proposed improvements and current boundaries |
 | [Public launch checklist](docs/PUBLIC_LAUNCH.md) | Repository metadata and release preparation |
+| [Project showcase](docs/SHOWCASE.md) | Engineering evidence, a short demo script, and ready-to-adapt launch copy |
 
 Bug reports, documentation improvements, regression tests, and focused usability changes are welcome. [Open an issue](https://github.com/k-Darshan-chowdary/CyberRisk360/issues/new/choose) with a reproducible example or discuss a larger change before implementation.
+
+**Make it your own:** fork the project, run the bundled scenario, and propose a focused improvement using the [contributor guide](CONTRIBUTING.md). If the workflow helps you learn or explain GRC, a star helps other people find it. Feedback about a confusing step or a missing explanation is useful too.
 
 Earlier phase documents, including the [Phase 1 scope](docs/project_scope.md), record the project's development history. This README describes the current application.
 
