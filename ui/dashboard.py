@@ -10,6 +10,7 @@ import streamlit as st
 
 from evidence_register import get_expired_evidence, get_expiring_evidence
 from remediation_register import get_overdue_actions
+from ui.navigation import navigate_to
 
 
 REFERENCE_DATE = "2026-08-05"
@@ -41,6 +42,18 @@ def render_dashboard(data: dict[str, list[dict[str, Any]]]) -> None:
     """Render summary metrics, charts, and priority-attention tables."""
     st.header("Executive Dashboard")
     st.write("A read-only overview of EagleShield Community Bank's cybersecurity risk posture.")
+    with st.container(border=True):
+        st.subheader("New here? Follow one risk from exposure to action")
+        st.write(
+            "Explore an employee phishing scenario, inspect its linked safeguards and evidence, "
+            "then change the assumptions to see how residual risk responds."
+        )
+        left, right = st.columns(2)
+        left.button("Explore the phishing scenario", type="primary", on_click=navigate_to,
+                    args=("Risk Register", "RSK-001"), key="start_demo")
+        right.button("View executive reports", on_click=navigate_to,
+                     args=("Reports & Exports",), key="tour_reports")
+        st.caption(f"Synthetic data · Fixed reference date: {REFERENCE_DATE} · No setup or API keys inside the demo")
 
     assets, risks = data["assets"], data["risks"]
     controls, evidence, actions = data["controls"], data["evidence"], data["remediation"]

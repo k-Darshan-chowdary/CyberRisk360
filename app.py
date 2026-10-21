@@ -14,6 +14,7 @@ from ui.remediation_page import render_remediation_page
 from ui.reports_page import render_reports_page
 from ui.risk_page import render_risk_page
 from ui.system_status_page import render_system_status_page
+from ui.navigation import initialize_navigation, sync_navigation
 
 
 st.set_page_config(
@@ -44,9 +45,13 @@ def main() -> None:
 
     st.sidebar.title("CyberRisk360")
     st.sidebar.caption("EagleShield Community Bank")
-    selected_page = st.sidebar.radio("Navigation", list(PAGES), key="main_navigation")
+    initialize_navigation()
+    selected_page = st.sidebar.radio("Navigation", list(PAGES), key="main_navigation", on_change=sync_navigation)
     st.sidebar.divider()
     st.sidebar.caption("Read-only GRC demo · Synthetic data")
+    st.sidebar.caption("Demo reference date: 2026-08-05")
+    st.sidebar.link_button("Source & contributions", "https://github.com/k-Darshan-chowdary/CyberRisk360")
+    st.sidebar.caption("Built by Darshan Konjeti")
 
     try:
         project_data = load_all_project_data()

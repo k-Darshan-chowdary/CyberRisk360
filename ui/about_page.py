@@ -11,6 +11,8 @@ def render_about_page(data: dict[str, list[dict[str, Any]]]) -> None:
     """Explain the project, architecture, methods, phases, and limitations."""
     del data  # The route signature stays consistent; this page does not need record data.
     st.header("About the Project")
+    st.markdown("Built by [Darshan Konjeti](https://github.com/k-Darshan-chowdary). "
+                "[View the source and contribute](https://github.com/k-Darshan-chowdary/CyberRisk360).")
     st.write(
         "CyberRisk360 connects asset inventory, cyber risk assessment, control mapping, "
         "evidence metadata, remediation, and executive reporting in a read-only GRC application."

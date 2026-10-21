@@ -20,6 +20,7 @@ def _start():
 def test_app_starts_without_uncaught_exceptions():
     app = _start()
     assert not app.exception
+    assert not app.error
 
 
 @pytest.mark.parametrize("route", ROUTES)
@@ -29,6 +30,7 @@ def test_every_navigation_route_renders_without_writes(route):
     app = _start()
     app.radio(key="main_navigation").set_value(route).run()
     assert not app.exception
+    assert not app.error
     after = {name: calculate_file_sha256(PROJECT_ROOT / name) for name in manifest["files"]}
     assert before == after
 
